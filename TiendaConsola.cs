@@ -12,8 +12,6 @@ namespace EjercicioCrudConsola.Presentacion
         {           
             bool stop = false;
             int opcion;
-            //decimal precio;
-            //int id;
             Tienda tienda = new Tienda();
 
             #region Datos iniciales
@@ -34,19 +32,15 @@ namespace EjercicioCrudConsola.Presentacion
                     case 0: 
                         stop = true;
                         break;
-
                     case 1:
                         ListarProductos(tienda);
                         break;
-
                     case 2:
                         AgregarProducto(tienda);               
                         break;
-
                     case 3:
                         ModificarProducto(tienda);        
                         break;
-
                     case 4:
                         EliminarProducto(tienda);                     
                         break;
