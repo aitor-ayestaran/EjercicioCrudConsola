@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace EjercicioCrudConsola.Entidades
 {
-    class Tienda
+    public class Tienda
     {
         private List<Producto> productos = new List<Producto>();
 
@@ -91,9 +91,9 @@ namespace EjercicioCrudConsola.Entidades
         }
 
         //public Producto this[int indice] => productos[indice];
-        public Producto this[int id] => productos.Find(p => new Regex(id.ToString()).Equals(p.Id.ToString()));
+        //public Producto this[int id] => productos.Find(p => new Regex(id.ToString()).Equals(p.Id.ToString()));
 
-        public Producto this[string nombre] => productos.Find(p => new Regex(nombre).IsMatch(p.Nombre));
+        //public Producto this[string nombre] => productos.Find(p => new Regex(nombre).IsMatch(p.Nombre));
         
     }
 }

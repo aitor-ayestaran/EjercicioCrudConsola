@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using EjercicioCrudConsola.Entidades;
 namespace EjercicioCrudConsola.Presentacion
 {
-    class TiendaConsola
+    public class TiendaConsola
     {
         public static void Main()
         {           
@@ -134,14 +134,7 @@ namespace EjercicioCrudConsola.Presentacion
             }
             while (respuesta != "S" && respuesta != "N");
 
-            if (respuesta == "S")
-            {
-                return true;
-            }
-            else
-            {
-                return false;
-            }
+            return respuesta == "S";
         }
 
         private static decimal PedirDecimal(string texto)

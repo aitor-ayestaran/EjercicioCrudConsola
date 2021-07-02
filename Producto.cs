@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace EjercicioCrudConsola.Entidades
 {
-    class Producto
+    public class Producto
     {
-        private static int contador = 1;
+        private static int contadorId = 1;
         public int Id { get; set; }
         public string Nombre { get; set; }
         public decimal Precio { get; set; }
@@ -16,8 +16,8 @@ namespace EjercicioCrudConsola.Entidades
         public Producto() { }
         public Producto(string nombre, decimal precio)
         {
-            Id = contador;
-            contador++;
+            Id = contadorId;
+            contadorId++;
             Nombre = nombre;
             Precio = precio;
         }
